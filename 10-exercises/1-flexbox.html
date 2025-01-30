@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .flexbox-container{
+                display: flex;
+                justify-content: space-evenly;
+                border: 1px solid black;
+                margin: 1px;
+                height: 250px;
+                row-gap:10px;
+            }
+            .flexbox-item{
+                height: 100px;
+                border:13px solid #333;
+                background-color: antiquewhite;
+            }
+            .flexbox-item:nth-child(1){
+                height: 100px;
+            }
+            .flexbox-item:nth-child(2){
+                height: 200px;
+
+            }
+            .flexbox-item:nth-child(3){
+                height: 300px;
+            }
+        </style>
+        <title>Flexbox Example</title>
+    </head>
+    <body>
+        <div class="flexbox-container">
+            <div class="flexbox-item">box1 h=100px</div>
+            <div class="flexbox-item">box2 h=200px</div>
+            <div class="flexbox-item">box3 h=300px</div>
+        </div>
+    </body>
+</html>
