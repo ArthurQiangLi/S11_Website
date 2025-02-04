@@ -23,7 +23,7 @@ def create_app():
 
 ```
 
-## One example of 3-people team
+## 1. One example of 3-people team
 
 You have tasks for 3 people each:
 
@@ -46,4 +46,36 @@ def create_app():
 
     return app
 
+```
+
+## 2. Comparing the booting code using Blueprint or not
+
+```python
+from flask import Flask, render_template, Blueprint
+
+bp_main = Blueprint('main', __name__)
+
+@bp_main.route('/')
+def index():
+    return render_template('main.html')
+
+if __name__ == '__main__':
+    app = Flask(__name__)
+    app.register_blueprint(bp_main)
+    app.run(debug=True, host='0.0.0.0', port=5000)
+```
+
+Alternatively, if you don't use Blueprint.
+
+```python
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)
 ```
