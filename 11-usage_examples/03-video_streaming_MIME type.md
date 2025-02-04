@@ -1,5 +1,7 @@
 # What is mimetype
 
+> Refer to ['01-camera-read-and-set.md'](./01-camera-read-and-set.md) about how to operate the camera.
+
 [2025/1/28]
 ![Alt text](../90-markdown_media/Screenshot%20from%202025-02-03%2016-54-14.png)
 

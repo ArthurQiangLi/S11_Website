@@ -14,6 +14,9 @@
 
 ![2](../90-markdown_media/Screenshot%20from%202025-02-03%2021-46-40.png)
 
+The data structure in this example.
+![5](../90-markdown_media/Screenshot%20from%202025-02-03%2022-18-04.png)
+
 ## [3-card_board.html](./06_layout_frontend/3-card%20board.html)
 
 ![3](../90-markdown_media/Screenshot%20from%202025-02-03%2021-56-56.png)
