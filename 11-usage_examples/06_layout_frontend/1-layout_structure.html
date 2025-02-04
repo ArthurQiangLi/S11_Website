@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>LayoutStructure</title>
+    <style>
+      :root {
+        /* --dashboard-width: 1400px; */
+        --card1-width: 500px;
+        --card3-width: 300px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px dashed black;
+      }
+      body {
+        background-color: rgb(32, 202, 245);
+
+        display: flex; /* display the 'page-body' in this mode */
+        justify-content: flex-start;
+        /* align-content: flex-start; */
+        /* align-items: center; */
+        min-width: 600px;
+        min-height: 400px;
+      }
+      @media (min-width: 1600px) {
+        body {
+          background-color: white;
+          justify-content: center;
+        }
+      }
+
+      .page-body {
+        width: auto;
+        /* height: 800px; */
+        background-color: blue;
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: 80px auto;
+        justify-content: center;
+        grid-template-areas:
+          "sidebar header"
+          "sidebar main";
+      }
+      aside {
+        background-color: darkcyan;
+        grid-area: sidebar;
+        display: grid;
+        grid-template-rows: 80px 1fr 80px;
+      }
+      header {
+        grid-area: header;
+      }
+      main {
+        margin: 10px;
+        grid-area: main;
+        background-color: beige;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+      }
+      .left-column {
+        background-color: pink;
+        display: grid;
+        grid-template-rows: 1fr 100px;
+        row-gap: 10px;
+      }
+      .right-column {
+        background-color: darkorchid;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10px;
+      }
+      .card {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px black;
+      }
+      .box {
+        background-color: gray;
+      }
+      .box1 {
+        width: 1226px;
+        height: 700px;
+      }
+      .box3 {
+        width: 350px;
+        height: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page-body">
+      <aside>
+        <div class="logo-title">logo-title</div>
+        <nav>links</nav>
+        <footer>footer</footer>
+      </aside>
+      <header>header</header>
+      <main>
+        <div class="left-column">
+          <div class="card">
+            <h2>card1</h2>
+            <div class="box box1"></div>
+          </div>
+          <div class="card">card2</div>
+        </div>
+        <div class="right-column">
+          <div class="card">
+            <h2>card3</h2>
+            <div class="box box3"></div>
+          </div>
+          <div class="card">card4</div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

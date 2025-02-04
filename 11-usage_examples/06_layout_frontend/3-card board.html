@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled Cards</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f4f4f4;
+        border: 1px dashed black;
+      }
+
+      .card-container {
+        font-family: Arial, sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        border: 1px dashed black;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: white;
+      }
+      .card-container > div:nth-child(1) {
+        grid-column: 1/-1;
+      }
+      .card-container > div:nth-child(6) {
+        grid-column: 1/-1;
+      }
+
+      .card {
+        /* card-indicator */
+        display: flex;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .card:nth-child(2),
+      .card:nth-child(3),
+      .card:nth-child(4),
+      .card:nth-child(5) {
+        width: 200px;
+        align-items: center;
+      }
+
+      .card.chart {
+        justify-content: center;
+        background-color: lightgray;
+      }
+      .card.chart img {
+        width: 400px;
+      }
+
+      .card-body {
+        font-size: 14px;
+        margin-left: 15px;
+      }
+
+      .card-value {
+        margin-top: 5px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      /* Color Themes */
+      .heart-rate {
+        background: #e8e8ff;
+      }
+      .status {
+        background: #e8fff0;
+      }
+      .rpm {
+        background: #fff5e8;
+      }
+      .distance {
+        background: #ffe8e8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card-header">Header</div>
+      <div class="card heart-rate">
+        <img src="icons/icon22.png" />
+        <div class="card-body">
+          <div>Label1</div>
+          <div class="card-value">23</div>
+        </div>
+      </div>
+
+      <div class="card status">
+        <img src="icons/icon25.png" />
+        <div class="card-body">
+          <div>Label2</div>
+          <div class="card-value">1</div>
+        </div>
+      </div>
+
+      <div class="card rpm">
+        <img src="icons/icon24.png" />
+        <div class="card-body">
+          <div>Lable3</div>
+          <div class="card-value">9.95 RPM</div>
+        </div>
+      </div>
+
+      <div class="card distance">
+        <img src="icons/icon23.png" />
+        <div class="card-body">
+          <div>Label3</div>
+          <div class="card-value">11.57 M</div>
+        </div>
+      </div>
+      <div class="card chart">
+        <img src="icons/linechart.png" />
+      </div>
+    </div>
+  </body>
+</html>

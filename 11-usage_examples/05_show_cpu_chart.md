@@ -2,7 +2,7 @@
 
 [2025/2/3]
 
-![Alt text](../../90-markdown_media/Screenshot%20from%202025-02-03%2020-09-46.png)
+![Alt text](../90-markdown_media/Screenshot%20from%202025-02-03%2020-09-46.png)
 
 ## Data and Control flows
 
@@ -49,4 +49,4 @@
 
 ## Running effect
 
-![21](../../90-markdown_media/Screenshot%20from%202025-02-03%2019-39-51.png)
+![21](../90-markdown_media/Screenshot%20from%202025-02-03%2019-39-51.png)
