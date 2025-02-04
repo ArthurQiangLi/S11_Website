@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubuntu System Monitor</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <style>
+      .box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: grey;
+        border-radius: 10px;
+      }
+      .box canvas {
+        border: 1px solid lightgrey;
+        margin: 10px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Ubuntu System Monitor</h2>
+    <div class="box">
+      <canvas id="cpuChart" width="500px"></canvas>
+      <canvas id="combinedChart"></canvas>
+    </div>
+  </body>
+</html>
