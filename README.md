@@ -11,6 +11,8 @@ Studying html, css, js and framework like Flask and React.
 5. [css_grid.md](./08-css_grid.md)
 6. [css-box_model.md](./09-css-box%20model.md)
 7. [css/svg-colors.md](./10-css-colors.md)
+8. `1fr` = taking up 1 fraction of remaining space, `auto`=expand/shrink depending on the amount of content.
+9. `flex:1` = `flex-grow:1; flex-shrink:1; flex-basis:0%` it allows this component to take up all the available space inside its paraent container.
 
 ## 1.2. Usage_examples
 
